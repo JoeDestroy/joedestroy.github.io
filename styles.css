@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Moon.svg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Sora', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #1f2e36;
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+
+    margin: 0 0.8em;
+
+    padding: 0.2em 1.5em;
+    transition: 0.3s;
+
+    clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+}
+
+nav ul li a:hover {
+    background-color: #0f1e26;
+}
+
+hr {
+    width: 60%;
+    margin-bottom: 2em;
+}   
+
+.content {
+    width: 60%;
+    background-color: #0f1e2655;
+    margin: 2em auto;
+    padding: 0.2em;
+}
+
+div img {
+    width: 70%;
+    border: 1px white solid;
+    margin: 0.5em 0;
+    transition: 0.3s;
+}
+
+div img:hover {
+    transform: scale(103%);
+}
+
+main ul {
+    display: inline-block;
+    text-align: left;
+    margin-top: 0;
+}
+
+main a {
+    color: #5f6e76;
+}
+
+#codelist {
+    padding: 0;
+    margin: 0;
+
+    font-size: 1.4em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #content {
+        width: 80%;
+    }
+
+    hr {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav ul li {
+        display: block;
+        margin: 0.2em 0;
+    }
+
+    nav ul li a {
+        padding: 0.2em 0;
+        clip-path: none;
+        width: 100%;
+    }
+}
